@@ -5,7 +5,7 @@ export default function _Layout() {
 
     const isAuthenticated = false;
     if(!isAuthenticated) {
-        return <Redirect to="/sign-in" />
+        return <Redirect href="/(auth)/sign-in" />
     }
     return <Slot />
 }
